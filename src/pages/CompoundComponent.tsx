@@ -12,18 +12,18 @@ const CompoundComponent = () => {
       return clone;
     });
   };
+
   const CheckboxInput = ({ checked, setChecked }: any) => {
     return (
       <input
         type="checkbox"
-        name=""
-        id=""
         checked={checked}
         onChange={() => setChecked(!checked)}
-        className="h-10"
+        className="mr-2"
       />
     );
   };
+
   const CheckboxLabel = ({ children, checked, setChecked }: any) => {
     return (
       <label>
@@ -35,8 +35,8 @@ const CompoundComponent = () => {
   return (
     <div>
       <Checkbox>
-        <CheckboxLabel>Checkbox Label</CheckboxLabel>
         <CheckboxInput />
+        <CheckboxLabel>Checkbox Label</CheckboxLabel>
       </Checkbox>
     </div>
   );
