@@ -5,6 +5,11 @@ const CompoundComponent = () => {
     const [checked, setChecked] = useState(false);
 
     return React.Children.map(children, (child) => {
+      console.log(child);
+      if (typeof child.type !== "function") {
+        return child;
+      }
+
       const clone = React.cloneElement(child, {
         checked,
         setChecked,
@@ -36,6 +41,7 @@ const CompoundComponent = () => {
     <div>
       <Checkbox>
         <CheckboxInput />
+        <p>hi</p>
         <CheckboxLabel>Checkbox Label</CheckboxLabel>
       </Checkbox>
     </div>
