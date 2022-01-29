@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { IMovie, MovieContext } from "../../contexts/MoviesContext";
+import { IMovie, MovieContext } from "../../components/contexts/MoviesContext";
 
 const Movies = () => {
   const movies = useContext(MovieContext);

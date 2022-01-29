@@ -1,3 +1,5 @@
+import ErrorBoundary from "./components/errorBoundary";
+import BuggyComponent from "./pages/BuggyComponent";
 import CompoundComponent from "./pages/CompoundComponent";
 import MovieList from "./pages/context";
 import "./styles/tailwind.css";
@@ -9,6 +11,9 @@ function App() {
         <div className="space-y-8 header:text-5xl">
           <CompoundComponent />
           <MovieList />
+          <ErrorBoundary>
+            <BuggyComponent />
+          </ErrorBoundary>
         </div>
       </div>
     </div>

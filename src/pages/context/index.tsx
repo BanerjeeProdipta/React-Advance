@@ -1,4 +1,4 @@
-import MovieProvider from "../../contexts/MoviesContext";
+import MovieProvider from "../../components/contexts/MoviesContext";
 import Movies from "./Movies";
 
 const MovieList = () => {
