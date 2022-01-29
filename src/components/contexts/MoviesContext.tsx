@@ -10,17 +10,17 @@ const movieList: IMovie[] = [
   {
     id: 1,
     name: "Shrek 1",
-    price: 5,
+    price: 50,
   },
   {
     id: 2,
     name: "How to train your dragon",
-    price: 5,
+    price: 25,
   },
   {
     id: 3,
     name: "Croods",
-    price: 5,
+    price: 15,
   },
 ];
 

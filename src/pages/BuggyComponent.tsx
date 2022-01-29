@@ -11,6 +11,7 @@ const BuggyComponent = () => {
 
   return (
     <div>
+      <h1>ERROR BOUNDARY: Click upto 5 to trigger the error.</h1>
       <button onClick={() => setCounter(counter + 1)}>{counter}</button>
     </div>
   );
