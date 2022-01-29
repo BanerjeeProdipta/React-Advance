@@ -39,6 +39,7 @@ const CompoundComponent = () => {
 
   return (
     <div>
+      <h1>COMPOUND COMPONENT:</h1>
       <Checkbox>
         <CheckboxInput />
         <p>hi</p>
