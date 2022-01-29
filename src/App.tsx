@@ -1,8 +1,12 @@
+import React from "react";
+import { Suspense } from "react";
 import ErrorBoundary from "./components/errorBoundary";
-import BuggyComponent from "./pages/BuggyComponent";
 import CompoundComponent from "./pages/CompoundComponent";
 import MovieList from "./pages/context";
 import HOC from "./pages/hoc";
+
+const BuggyComponent = React.lazy(() => import("./pages/BuggyComponent"));
+
 import "./styles/tailwind.css";
 
 function App() {
@@ -14,7 +18,9 @@ function App() {
             <CompoundComponent />
             <MovieList />
             <ErrorBoundary>
-              <BuggyComponent />
+              <Suspense fallback={<div>Loading...</div>}>
+                <BuggyComponent />
+              </Suspense>
             </ErrorBoundary>
             <HOC />
           </div>
