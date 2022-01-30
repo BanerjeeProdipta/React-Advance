@@ -58,10 +58,11 @@
         "ignoreTemplateLiterals": true
       }
     ],
+    "comma-dangle": [2, "never"],
+    "operator-linebreak": ["error", "none"],
     "multiline-ternary": 0,
     "react/jsx-filename-extension": [2, { "extensions": [".tsx", ".ts"] }],
-    "react/jsx-props-no-spreading": "false",
-    "prettier/prettier": "error",
+    "react/jsx-props-no-spreading": "off",
     "no-unused-vars": "warn",
     "no-console": "off",
     "func-names": "off",

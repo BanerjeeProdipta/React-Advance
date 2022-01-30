@@ -63,6 +63,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn lint",
       "yarn prettier --write",
       "yarn test --watchAll=false --findRelatedTests --bail"
     ]
