@@ -58,8 +58,9 @@
         "ignoreTemplateLiterals": true
       }
     ],
-    "comma-dangle": [2, "never"],
-    "operator-linebreak": ["error", "none"],
+    "comma-dangle": [1, "never"],
+    "operator-linebreak": ["off", "none"],
+    "object-curly-newline": ["error", "never"],
     "multiline-ternary": 0,
     "react/jsx-filename-extension": [2, { "extensions": [".tsx", ".ts"] }],
     "react/jsx-props-no-spreading": "off",

@@ -7,21 +7,9 @@ export interface IMovie {
 }
 
 const movieList: IMovie[] = [
-  {
-    id: 1,
-    name: 'Shrek 1',
-    price: 50,
-  },
-  {
-    id: 2,
-    name: 'How to train your dragon',
-    price: 25,
-  },
-  {
-    id: 3,
-    name: 'Croods',
-    price: 15,
-  },
+  { id: 1, name: 'Shrek 1', price: 50 },
+  { id: 2, name: 'How to train your dragon', price: 25 },
+  { id: 3, name: 'Croods', price: 15 },
 ];
 
 export const MovieContext = createContext<IMovie[] | null>(null);
