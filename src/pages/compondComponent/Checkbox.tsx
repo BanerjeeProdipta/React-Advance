@@ -9,10 +9,7 @@ const Checkbox = ({ children }: any) => {
       return child;
     }
 
-    const clone = React.cloneElement(child, {
-      checked,
-      setChecked,
-    });
+    const clone = React.cloneElement(child, { checked, setChecked });
     return clone;
   });
 };
