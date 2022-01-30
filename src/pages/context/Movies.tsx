@@ -1,6 +1,6 @@
 /* eslint-disable consistent-return */
-import { useContext } from "react";
-import { IMovie, MovieContext } from "../../components/contexts/MoviesContext";
+import { useContext } from 'react';
+import { IMovie, MovieContext } from '../../components/contexts/MoviesContext';
 
 function Movies() {
   const moviesList = useContext(MovieContext);
@@ -34,13 +34,14 @@ function Movies() {
           <div>
             <MovieContext.Consumer>
               {(movies) => {
-                if (movies && movies.length > 0)
+                if (movies && movies.length > 0) {
                   return movies.map((movie: IMovie) => (
                     <div key={movie.id}>
                       <h5>{movie.name}</h5>
                       <p>{movie.price}</p>
                     </div>
                   ));
+                }
               }}
             </MovieContext.Consumer>
           </div>

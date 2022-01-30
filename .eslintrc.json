@@ -42,14 +42,12 @@
         "tsx": "never"
       }
     ],
-    "react/jsx-filename-extension": [2, { "extensions": [".tsx", ".ts"] }],
     "@typescript-eslint/no-explicit-any": [
       "warn",
       {
         "ignoreRestArgs": true
       }
     ],
-    "multiline-ternary": 0,
     "max-len": [
       "warn",
       {
@@ -59,6 +57,15 @@
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true
       }
-    ]
+    ],
+    "multiline-ternary": 0,
+    "react/jsx-filename-extension": [2, { "extensions": [".tsx", ".ts"] }],
+    "react/jsx-props-no-spreading": "false",
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off"
   }
 }

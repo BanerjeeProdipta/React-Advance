@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function BuggyComponent() {
   const [counter, setCounter] = useState(0);
@@ -6,7 +6,7 @@ function BuggyComponent() {
   console.log(counter);
 
   if (counter === 5) {
-    throw new Error("I crashed!");
+    throw new Error('I crashed!');
   }
 
   return (

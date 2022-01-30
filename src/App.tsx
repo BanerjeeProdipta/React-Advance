@@ -1,11 +1,11 @@
-import React, { Suspense } from "react";
-import ErrorBoundary from "./components/errorBoundary";
-import CompoundComponent from "./pages/compondComponent";
-import MovieList from "./pages/context";
-import HOC from "./pages/hoc";
-import "./styles/tailwind.css";
+import React, { Suspense } from 'react';
+import ErrorBoundary from './components/errorBoundary';
+import CompoundComponent from './pages/compondComponent';
+import MovieList from './pages/context';
+import HOC from './pages/hoc';
+import './styles/tailwind.css';
 
-const BuggyComponent = React.lazy(() => import("./pages/BuggyComponent"));
+const BuggyComponent = React.lazy(() => import('./pages/BuggyComponent'));
 
 function App() {
   return (

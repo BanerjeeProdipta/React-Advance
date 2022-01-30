@@ -1,11 +1,14 @@
-import withCounter from "../../components/hocs";
+import withCounter from '../../components/hocs';
 
 function ComponentOne(props: any) {
   const { count, increment, name } = props;
   return (
     <div>
       <button type="button" onClick={increment}>
-        {name}: {count}
+        <p>
+          {name}
+          <span>{count}</span>
+        </p>
       </button>
     </div>
   );

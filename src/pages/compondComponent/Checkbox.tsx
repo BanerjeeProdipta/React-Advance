@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Checkbox = ({ children }: any) => {
   const [checked, setChecked] = useState(false);
 
   return React.Children.map(children, (child) => {
     console.log(child);
-    if (typeof child.type !== "function") {
+    if (typeof child.type !== 'function') {
       return child;
     }
 

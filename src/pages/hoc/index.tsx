@@ -1,5 +1,5 @@
-import ComponentOneWithCounter from "./ComponentOne";
-import ComponentTwoWithCounter from "./ComponentTwo";
+import ComponentOneWithCounter from './ComponentOne';
+import ComponentTwoWithCounter from './ComponentTwo';
 
 function HOC() {
   return (

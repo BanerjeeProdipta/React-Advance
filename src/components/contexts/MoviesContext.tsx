@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState } from 'react';
 
 export interface IMovie {
   id: number;
@@ -9,17 +9,17 @@ export interface IMovie {
 const movieList: IMovie[] = [
   {
     id: 1,
-    name: "Shrek 1",
+    name: 'Shrek 1',
     price: 50,
   },
   {
     id: 2,
-    name: "How to train your dragon",
+    name: 'How to train your dragon',
     price: 25,
   },
   {
     id: 3,
-    name: "Croods",
+    name: 'Croods',
     price: 15,
   },
 ];
