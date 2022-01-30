@@ -1,15 +1,15 @@
 import withCounter from "../../components/hocs";
 
-const ComponentTwo = (props: any) => {
+function ComponentTwo(props: any) {
   const { count, increment, name } = props;
   return (
     <div>
-      <button onClick={increment}>
+      <button type="button" onClick={increment}>
         {name}: {count}
       </button>
     </div>
   );
-};
+}
 
 const ComponentTwoWithCounter = withCounter(ComponentTwo);
 export default ComponentTwoWithCounter;

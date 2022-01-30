@@ -26,10 +26,10 @@ const movieList: IMovie[] = [
 
 export const MovieContext = createContext<IMovie[] | null>(null);
 
-const MovieProvider = ({ children }: { children: React.ReactNode }) => {
+function MovieProvider({ children }: { children: React.ReactNode }) {
   const [movies] = useState<IMovie[]>(movieList);
 
   return <MovieContext.Provider value={movies}>{children}</MovieContext.Provider>;
-};
+}
 
 export default MovieProvider;

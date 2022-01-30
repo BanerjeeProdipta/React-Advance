@@ -1,7 +1,7 @@
 import ComponentOneWithCounter from "./ComponentOne";
 import ComponentTwoWithCounter from "./ComponentTwo";
 
-const HOC = () => {
+function HOC() {
   return (
     <div>
       <h1>HOC:</h1>
@@ -13,6 +13,6 @@ const HOC = () => {
       <ComponentTwoWithCounter name="Component 2" />
     </div>
   );
-};
+}
 
 export default HOC;

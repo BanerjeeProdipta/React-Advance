@@ -1,7 +1,7 @@
 import MovieProvider from "../../components/contexts/MoviesContext";
 import Movies from "./Movies";
 
-const MovieList = () => {
+function MovieList() {
   return (
     <div>
       <h1>CONTEXT:</h1>{" "}
@@ -10,6 +10,6 @@ const MovieList = () => {
       </MovieProvider>
     </div>
   );
-};
+}
 
 export default MovieList;

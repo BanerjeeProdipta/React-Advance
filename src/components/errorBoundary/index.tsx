@@ -9,6 +9,7 @@ interface State {
 }
 
 class ErrorBoundary extends Component<Props, State> {
+  // eslint-disable-next-line react/state-in-constructor
   public state: State = {
     hasError: false,
   };
@@ -23,10 +24,12 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   public render() {
+    // eslint-disable-next-line react/destructuring-assignment
     if (this.state.hasError) {
       return <h1>Sorry.. there was an error.</h1>;
     }
 
+    // eslint-disable-next-line react/destructuring-assignment
     return this.props.children;
   }
 }

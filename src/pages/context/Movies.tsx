@@ -1,7 +1,8 @@
+/* eslint-disable consistent-return */
 import { useContext } from "react";
 import { IMovie, MovieContext } from "../../components/contexts/MoviesContext";
 
-const Movies = () => {
+function Movies() {
   const moviesList = useContext(MovieContext);
 
   return (
@@ -47,6 +48,6 @@ const Movies = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Movies;
