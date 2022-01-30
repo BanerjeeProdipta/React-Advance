@@ -1,6 +1,6 @@
-import Checkbox from "./Checkbox";
-import CheckboxInput from "./CheckboxInput";
-import CheckboxLabel from "./CheckboxLabel";
+import Checkbox from './Checkbox';
+import CheckboxInput from './CheckboxInput';
+import CheckboxLabel from './CheckboxLabel';
 
 function CompoundComponent() {
   return (
