@@ -1,11 +1,17 @@
 import React, { Suspense } from 'react';
-import ErrorBoundary from './components/errorBoundary';
+import { ErrorBoundary } from 'react-error-boundary';
+// import ErrorBoundary from './components/errorBoundary';
 import CompoundComponent from './pages/compondComponent';
 import MovieList from './pages/context';
+import Fallback from './pages/Fallback';
 import HOC from './pages/hoc';
 import './styles/tailwind.css';
 
 const BuggyComponent = React.lazy(() => import('./pages/BuggyComponent'));
+
+const errorHandler = (error: any, errorInfo: any) => {
+  console.log(error, errorInfo);
+};
 
 function App() {
   return (
@@ -15,7 +21,7 @@ function App() {
           <div className="space-y-8">
             <CompoundComponent />
             <MovieList />
-            <ErrorBoundary>
+            <ErrorBoundary FallbackComponent={Fallback} onError={errorHandler}>
               <Suspense fallback={<div>Loading...</div>}>
                 <BuggyComponent />
               </Suspense>
