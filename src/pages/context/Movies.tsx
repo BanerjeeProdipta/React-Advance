@@ -8,14 +8,14 @@ function Movies() {
   return (
     <div>
       <div>
-        <p className="italic text-xs max-w-sm text-gray-500">
+        <p className="max-w-sm text-xs italic text-gray-500">
           The difference is in the way context is consumed. To use data passed from a parent
           component via context, you use context.Consumer component in ES6 classes. A function is
           passed as a child of context.Consumer. The function takes context as an argument and
           returns JSX which renders the data passed via context.
         </p>
       </div>
-      <div className="space-y-8 mt-4">
+      <div className="mt-4 space-y-8">
         <div>
           <h2>FROM useContext-</h2>
 

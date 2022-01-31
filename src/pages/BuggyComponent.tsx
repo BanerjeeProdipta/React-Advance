@@ -12,7 +12,7 @@ function BuggyComponent() {
   return (
     <div>
       <h1>ERROR BOUNDARY: </h1>
-      <p className="italic text-xs max-w-sm text-gray-500">Click upto 5 to trigger the error.</p>
+      <p className="max-w-sm text-xs italic text-gray-500">Click upto 5 to trigger the error.</p>
       <button type="button" onClick={() => setCounter(counter + 1)}>
         {counter}
       </button>

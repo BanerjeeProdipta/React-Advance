@@ -58,7 +58,7 @@
         "ignoreTemplateLiterals": true
       }
     ],
-    "comma-dangle": [1, "never"],
+    // "comma-dangle": [1, "never"],
     "operator-linebreak": ["off", "none"],
     "object-curly-newline": ["error", "never"],
     "multiline-ternary": 0,
