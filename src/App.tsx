@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 // import ErrorBoundary from './components/errorBoundary';
-import CompoundComponent from './pages/compondComponent';
+import CompoundComponent from './pages/compoundComponent';
 import MovieList from './pages/context';
 import Fallback from './pages/Fallback';
 import HOC from './pages/hoc';
