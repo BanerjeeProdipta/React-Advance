@@ -1,25 +1,23 @@
 {
-  // config related to code formatting
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": null
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": null
-  },
-  "javascript.validate.enable": false, //disable all built-in syntax checking
-  "editor.codeActionsOnSave": {
-    // "source.fixAll.eslint": true,
-    // "source.fixAll.tslint": true,
-    "source.organizeImports": true
-  },
-  "eslint.alwaysShowStatus": true,
-  // emmet
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  }
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.organizeImports": true
+    },
+    "eslint.validate": ["javascript"],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "git.ignoreLimitWarning": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
 }
