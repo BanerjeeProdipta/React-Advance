@@ -5,7 +5,7 @@ function HOC() {
   return (
     <div>
       <h1>HOC:</h1>
-      <p className="italic text-xs max-w-sm text-gray-500 mb-4">
+      <p className="mb-4 max-w-sm text-xs italic text-gray-500">
         (HOC) is an advanced technique in React for reusing component logic. Concretely, a
         higher-order component is a function that takes a component and returns a new component.
       </p>

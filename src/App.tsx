@@ -15,9 +15,9 @@ const errorHandler = (error: any, errorInfo: any) => {
 
 function App() {
   return (
-    <div className="min-h-screen text-gray-300 bg-gray-900">
-      <div className="container p-6 mx-auto">
-        <div className="flex flex-col items-center prose-h1:text-3xl prose-h2:text-lg prose-headings:font-semibold">
+    <div className="min-h-screen bg-gray-900 text-gray-300">
+      <div className="container mx-auto p-6">
+        <div className="flex flex-col items-center prose-headings:font-semibold prose-h1:text-3xl prose-h2:text-lg">
           <div className="space-y-8">
             <CompoundComponent />
             <MovieList />
